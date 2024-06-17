@@ -1,212 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <header>
-        <div class="logo">
-          <a href="#"><img src="images/logo.jpg" alt="logo" /></a>
-        </div>
-        <nav class="nav-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#hotels">Hotels</a></li>
-            <li><a href="#activites">Attractionss</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Travel Website Logo">
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#destination">Destinations</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-      </header>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-image">
-          <img src="images/hero.jpg" alt="Hero image" />
+        <div class="hero-section">
+            <h1>Nomad: Uncharted adventures await</h1>
+            <p>Craft your epic adventure - unique destinations, extraordinary experiences!</p>
+            <button class="btn">Explore Now</button>
         </div>
-        <div class="hero-content">
-          <h1>Welcome to Our Travel Website</h1>
-          <p>Discover amazing destinations and book your next trip with us.</p>
-          <a href="#" class="hero-button">Book Now</a>
-        </div>
-      </section>
-      <!-- Destinations -->
-      <section id="destinations" class="destinations">
-        <h2>Popular Destinations</h2>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destination" class="destination">
+        <h2>Explore Our Destinations</h2>
         <div class="destination-grid">
-          <div class="destination-item">
-            <img src="images/destination-1.jpg" alt="" />
-            <h3>Varanasi</h3>
-            <p>
-              Varanasi, one of the world's oldest continuously inhabited cities, offers a profound spiritual experience with its sacred ghats along the Ganges River and its vibrant cultural heritage. Renowned for its ancient temples, bustling markets, and rich traditions, Varanasi is a must-visit destination for those seeking to explore the heart of India's spirituality and history.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/destination-2.jpg" alt="" />
-            <h3>Kashmir</h3>
-            <p>
-              Kashmir, often referred to as "Paradise on Earth," captivates travelers with its breathtaking landscapes, including lush valleys, pristine lakes, and snow-capped mountains. Known for its serene beauty, rich cultural heritage, and adventure opportunities, Kashmir is a top destination for nature lovers and thrill-seekers alike.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/destination-3.jpg" alt="" />
-            <h3>Kolkata</h3>
-            <p>
-              Kolkata, the cultural capital of India, is renowned for its rich history, vibrant arts scene, and colonial architecture. Home to iconic landmarks such as the Victoria Memorial and Howrah Bridge, Kolkata offers a blend of traditional charm and modern vibrancy, making it a fascinating destination for travelers.
-            </p>
-          </div>
+            <div class="destination-row">
+                <div class="destination-card">
+                    <img src="images/destination-1.jpg">
+                    <div class="destination-info">
+                        <h3>Varanasi</h3>
+                        <p>Escape to Varanasi's luxurious sanctuary, the Taj Ganges. This 5-star retreat nestled on 12 verdant acres offers a haven of modern comfort and timeless elegance. Unwind in spacious rooms with city or garden views, and experience the world-renowned Taj hospitality. Discover a perfect harmony between spiritual exploration and luxurious indulgence at the Taj Ganges.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/hotel-1.jpg">
+                    <div class="destination-info">
+                        <h3>Taj Ganges</h3>
+                        <p>Escape to Varanasi's luxurious oasis, the Taj Ganges. This 5-star retreat, nestled on verdant grounds, offers modern comfort, stunning views, and legendary Taj hospitality. Unwind, explore the holy city, and indulge in unforgettable experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-row">
+                <div class="destination-card">
+                    <img src="images/destination-2.jpg">
+                    <div class="destination-info">
+                        <h3>Kashmir</h3>
+                        <p>Embark on a journey to Kashmir, the "Paradise on Earth" nestled in the majestic Himalayas. Lush valleys cradle glistening lakes like Dal and Nageen, while snow-capped peaks pierce the sapphire skies. Experience a rich cultural tapestry, explore charming houseboats, and discover serenity amidst breathtaking landscapes. Kashmir awaits!</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/hotel-2.jpg">
+                    <div class="destination-info">
+                        <h3>The Khyber Himalayan Resort & Spa</h3>
+                        <p>Paradise awaits at The Khyber Himalayan Resort & Spa. This luxurious retreat in Kashmir boasts stunning mountain views, world-class service, and a rejuvenating spa. Wake up to breathtaking panoramas, indulge in gourmet dining, and explore the slopes in style. The Khyber: luxury meets adventure in Kashmir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="destination-row">
+                <div class="destination-card">
+                    <img src="images/destination-3.jpg">
+                    <div class="destination-info">
+                        <h3>Kolkata</h3>
+                        <p>Kolkata beckons! Dive into the energetic spirit of India's "City of Joy." Marvel at architectural marvels like the Victoria Memorial, wander through bustling markets like Chandni Chowk, and savor iconic Bengali cuisine. Immerse yourself in the city's artistic heritage, from museums brimming with treasures to vibrant street art. Kolkata promises an unforgettable cultural adventure.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="images/hotel-3.jpg">
+                    <div class="destination-info">
+                        <h3>ITC Royal Bengal</h3>
+                        <p>Unveiling Kolkata's regal stay, ITC Royal Bengal! This LEED Platinum certified masterpiece offers a blend of heritage and modern luxury.  Indulge in spacious rooms, world-class cuisine from 7 restaurants, and rejuvenate at the renowned Kaya Kalp spa. Experience Kolkata's cultural tapestry in style.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <section id="hotels" class="destinations">
-        <h2>Featured Hotels</h2>
-        <div class="destination-grid">
-          <div class="destination-item">
-            <img src="images/hotel-1.jpg" alt="" />
-            <h3>Taj Ganges</h3>
-            <p>
-              The Taj Ganges in Varanasi is renowned for its luxurious ambiance, excellent hospitality, and beautiful gardens, offering a serene retreat in the heart of the city​ .
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/hotel-2.jpg" alt="" />
-            <h3>The Khyber Himalayan Resort & Spa</h3>
-            <p>
-              Nestled in the serene beauty of the Himalayas, The Khyber Himalayan Resort & Spa offers an unparalleled blend of luxury, tranquility, and adventure amidst breathtaking mountain vistas.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/hotel-3.jpg" alt="" />
-            <h3> ITC Royal Bengal.</h3>
-            <p>
-              ITC Royal Bengal is a luxurious hotel in Kolkata that epitomizes grandeur with its elegant architecture, opulent accommodations, and world-class amenities, providing guests with an unforgettable experience of refinement and hospitality.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="activites" class="destinations">
-        <h2>Tourist Attractions</h2>
-        <div class="destination-grid">
-          <div class="destination-item">
-            <img src="images/activity-1.jpg" alt="" />
-            <h3>Varanasi</h3>
-            <p>
-              Varanasi, one of the oldest continuously inhabited cities in the world, boasts a wealth of tourist attractions, including the sacred ghats along the Ganges River, the historic Vishwanath Temple, the tranquil Sarnath where Lord Buddha preached his first sermon, and the bustling narrow streets of the old city offering a glimpse into the vibrant local life and spirituality of this ancient city.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/activity-2.jpg" alt="" />
-            <h3>Kashmir</h3>
-            <p>
-              Kashmir, adorned with majestic mountains, serene lakes, Mughal gardens, and revered shrines, captivates visitors with its breathtaking natural beauty and rich cultural heritage.
-            </p>
-          </div>
-          <div class="destination-item">
-            <img src="images/activity-3.jpg" alt="" />
-            <h3>Kolkata</h3>
-            <p>
-              Kolkata, the cultural capital of India, enthralls visitors with its bustling streets, colonial architecture, vibrant festivals, and delectable cuisine, offering a captivating blend of history, art, and modernity.
-            </p>
-          </div>
-        </div>
-      </section>
-    <section id="photosFromTravellers" class="photos">
-      <h2>Photos from Travellers</h2>
-      <div class="photos-grid">
-        <div class="photos-item">
-          <img src="images/p1.jpg" alt="" />
-        </div>
-        <div class="photos-item">
-          <img src="images/p2.jpg" alt="" />
-        </div>
-        <div class="photos-item">
-          <img src="images/p3.jpg" alt="" />
-        </div>
-      </div>
-    </section> 
-      <section id="about" class="about">
-        <h3>About Us</h3>
-        <p>
-          Our company is dedicated to providing the best travel experiences to
-          our customers. We specialize in creating custom itineraries that cater
-          to each individual's interests and preferences.
-        </p>
-      
-      <section id="contact" class="contact">
-        <h3>Contact Us</h3>
-        <div class="contact-info">
-          <p>
-            If you have any questions or would like to book a trip, please fill
-            out the form below or contact us using the information provided.
-          </p>
-          <ul>
-            <li>
-              <i class="fas fa-map-marker-alt"></i>EM-4/1, EM-4, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i
-              ><a href="mailto:info@travelcompany.com"
-                >info@travelcompany.com</a
-              >
-            </li>
-            <li>
-              <i class="fas fa-phone-alt"></i
-              ><a href="tel:555-123-4567">555-123-4567</a>
-            </li>
-          </ul>
-        </div>
-        <form action="#" class="form">
-          <div class="form-group">
-            <input
-              type="name"
-              name="name"
-              id="name"
-              placeholder="Enter Your Name"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter Your Email"
-            />
-          </div>
-          <div class="form-group">
-            <textarea
-              name="textarea"
-              id="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button type="submit">Send Message</button>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <form action="">
+            <h2>Join Our Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum commodi distinctio vel cumque ratione nam.</p>
+            <div class="email-box">
+                <i class="fas fa-envelope"></i>
+                <input class="tbox" type="email" placeholder="Enter your email address">
+                <button class="tbtn" type="button" name="button">Subscribe</button>
+            </div>
         </form>
-      </section>
-      <footer>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/" target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="https://www.twitter.com/" target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us">
+        <h2>Tell Us About Your Experience</h2>
+        <form action="#">
+            <input type="name" placeholder="Name">
+            <br><br>
+
+            <input type="email" name="email" placeholder="Email">
+            <br><br>
+
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <ul>
+                <li><i class="fas fa-solid fa-location-dot"></i>EM-4/1, EM-4, EM Block, Sector V, Bidhannagar, Kolkata, West Bengal 700091</li>
+                <li><i class="fas fa-solid fa-envelope"></i><a href="mailto:helpdesk@nomad.com">helpdesk@nomad.com</a></li>
+                <li><i class="fas fa-solid fa-phone"></i><a href="tel:+555-666-7777">555-666-7777</a></li>
+            </ul>
         </div>
-        <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
-      </footer>
-    </main>
-  </body>
-  <script
-    src="https://kit.fontawesome.com/6558443b63.js"
-    crossorigin="anonymous"
-  ></script>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Nomad Tours and Travels. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navMenu");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
 </html>
